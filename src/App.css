@@ -1,7 +1,6 @@
 .app-container {
   display: flex;
   flex-direction: column;
-  margin-top: 200px;
   padding-left: 20%;
   padding-right: 20%;
 }
@@ -32,8 +31,19 @@ p {
 
 @media only screen and (max-width: 600px) {
   .app-container {
-    margin-top: 200px;
-    padding-left: 20%;
-    padding-right: 20%;
+    margin-top: 100px;
+    padding-left: 5%;
+    padding-right: 5%;
   }
+
+  .main-container {
+    padding-top: 2%;
+    flex-direction: column;
+  }
+}
+
+img {
+  height: 50%;
+  width: 50%;
+  padding-left: 25%;
 }
