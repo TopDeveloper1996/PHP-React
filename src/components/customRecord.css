@@ -1,22 +1,9 @@
 .custom-record-container {
     display: flex;
     flex-direction: column;
+    box-shadow: 0 4px 8px 0 rgba(5, 135, 241, 0.2), 0 6px 10px 0 rgba(2, 78, 241, 0.19);
+    margin-bottom: 5px;
 }
-
-.custom-record-container::after {
-    content: " 123";
-    height: 0;
-    position: relative;
-    top: 50px;
-    width: 0;
-    z-index: 1;
-    right: 35px;
-    border: medium solid rgb(240, 10, 10);
-    border-width: 10px 0 10px 10px;
-    border-color: transparent transparent transparent white;
-}
-
-.custom-record-container
 
 .array-source-container {
     display: flex;
@@ -37,6 +24,7 @@
 }
 
 .label {
+    padding-top: 5px;
     padding-left: 50%;
     font-size: 10px;
 }
