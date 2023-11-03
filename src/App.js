@@ -20,19 +20,32 @@ function App() {
     let arrayInteger = arrayText.split(' ');
     arrayInteger.sort((a, b) => a - b);
 
-    let n = 0;
-    arrayInteger.forEach(i => {
-      if (i % 2 === 1) n++;
-    });
+    // let n = 0;
+    // arrayInteger.forEach(i => {
+    //   if (i % 2 === 1) n++;
+    // });
 
-    const newRecord = {
-      array: arrayInteger.join(' '),
-      max: arrayInteger[arrayInteger.length - 1],
-      min: arrayInteger[0],
-      noo: n
-    }
+    // const newRecord = {
+    //   array: arrayInteger.join(' '),
+    //   max: arrayInteger[arrayInteger.length - 1],
+    //   min: arrayInteger[0],
+    //   noo: n
+    // }
+    //setRecords(prev => [...prev, newRecord]);
 
-    setRecords(prev => [...prev, newRecord]);
+    const dataToSend = {'dataFromReact': arrayInteger}
+
+    fetch('http://localhost/api.php', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(dataToSend)
+    }).then((response) => response.json())
+    .then((newRecord) => {
+      setRecords(prev => [...prev, newRecord]);
+    })
+
   }
 
 

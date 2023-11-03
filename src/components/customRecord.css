@@ -3,6 +3,19 @@
     flex-direction: column;
 }
 
+.custom-record-container::after {
+    content: " 123";
+    height: 0;
+    position: relative;
+    top: 50px;
+    width: 0;
+    z-index: 1;
+    right: 35px;
+    border: medium solid rgb(240, 10, 10);
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent white;
+}
+
 .custom-record-container
 
 .array-source-container {
