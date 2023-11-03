@@ -19,8 +19,10 @@ function App() {
   const handleDisplayResult = () => {
 
     let arrayInteger = arrayText.split(' ');
-    arrayInteger.sort((a, b) => a - b);
-
+    
+    //Only Using React Case
+    
+    // arrayInteger.sort((a, b) => a - b);
     // let n = 0;
     // arrayInteger.forEach(i => {
     //   if (i % 2 === 1) n++;
@@ -32,8 +34,9 @@ function App() {
     //   min: arrayInteger[0],
     //   noo: n
     // }
-    //setRecords(prev => [...prev, newRecord]);
+    // setRecords(prev => [...prev, newRecord]);
 
+    //Using PHP
     const dataToSend = {'dataFromReact': arrayInteger}
 
     fetch('http://localhost/api.php', {
