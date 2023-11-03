@@ -8,8 +8,6 @@ function App() {
 
   const [records, setRecords] = useState([]);
 
-  //  const [arrayInteger, setArrayInteger] = useState([]);
-
   const [arrayText, setArrayText] = useState('');
 
   const handleNewArrayText = (NewArrayText) => {
