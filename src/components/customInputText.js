@@ -1,7 +1,7 @@
 import React from 'react';
 import './customInputText.css'
 
-export function CustomInputText({ setText }) {
+export default function CustomInputText({ setText }) {
 
     const handleInputChange = (event) => {
         const data = event.target.value;

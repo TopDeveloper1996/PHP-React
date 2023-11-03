@@ -1,8 +1,9 @@
 import { useState } from 'react';
-import './App.css';
-import { CustomButton } from './components/customButton';
-import { CustomInputText } from './components/customInputText';
+import CustomButton from './components/customButton';
+import CustomInputText from './components/customInputText';
 import CustomRecord from './components/customRecord';
+
+import './App.css';
 
 function App() {
 
