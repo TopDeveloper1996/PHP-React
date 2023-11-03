@@ -1,0 +1,44 @@
+.custom-record-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.array-source-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.result-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30%;
+}
+
+.result {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.label {
+    padding-left: 50%;
+    font-size: 10px;
+}
+
+.array {
+    padding-left: 20px;
+    padding-top: 0;
+    padding-bottom: 0;
+    text-align: center;
+}
+
+.value {
+    padding-left: 20px;
+    font-size: 24px;
+}
+
+hr {
+    width: 96%;
+}
