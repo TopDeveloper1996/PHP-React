@@ -2,6 +2,7 @@ import { useState } from 'react';
 import CustomButton from './Components/customButton';
 import CustomInputText from './Components/customInputText';
 import CustomRecord from './Components/customRecord';
+import logo from './logo.svg'
 
 import './App.css';
 
@@ -51,7 +52,7 @@ function App() {
 
   return (
     <div className='app-container'>
-
+      <img src={logo}/>
       <div className='main-container'>
         <CustomInputText setText={handleNewArrayText} />
         <CustomButton display={handleDisplayResult} />
